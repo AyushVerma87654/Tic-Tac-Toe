@@ -7,12 +7,11 @@ type LayoutProps = {
   list: listProps;
   setList: (a: listProps) => void;
   result: string;
+  turn: boolean;
+  setTurn: (a: boolean) => void;
 };
 
-const Layout: FC<LayoutProps> = ({ list, setList, result }) => {
-  const [data, setData] = useState("");
-  const [turn, setTurn] = useState(true);
-
+const Layout: FC<LayoutProps> = ({ list, setList, result, turn, setTurn }) => {
   const handleClick = (num: number) => {
     if (result.length == 0) {
       if (list[num - 1].value != "X") {
@@ -20,10 +19,8 @@ const Layout: FC<LayoutProps> = ({ list, setList, result }) => {
           const newList = [...list];
           if (turn) {
             newList[num - 1].value = "X";
-            setData("X");
           } else {
             newList[num - 1].value = "O";
-            setData("O");
           }
           setTurn(!turn);
           setList(newList);
