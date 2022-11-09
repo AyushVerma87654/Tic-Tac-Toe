@@ -1,7 +1,6 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import Calculate from "./Calculate";
-import DivInput from "./DivInput";
 import { allData } from "./dummyData";
 import Heading from "./Heading";
 import Layout from "./Layout";

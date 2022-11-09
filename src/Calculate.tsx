@@ -8,9 +8,6 @@ type CalculateProps = {
 };
 
 const Calculate: FC<CalculateProps> = ({ list, setList, setResult }) => {
-  // 1 4 7 , 2 5 8 , 3 6 9 , 1 2 3 , 4 5 6 , 7 8 9 , 1 5 9 , 3 5 7
-  //                 036                      012     048      246
-
   let token = 2;
 
   if (list[1].value == "X" && list[4].value == "X" && list[7].value == "X") {
