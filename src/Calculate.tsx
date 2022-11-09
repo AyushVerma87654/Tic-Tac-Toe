@@ -108,9 +108,9 @@ const Calculate: FC<CalculateProps> = ({ list, setList, setResult }) => {
   }
 
   if (token == 0) {
-    setResult("O");
+    setResult("Player 2");
   } else if (token == 1) {
-    setResult("X");
+    setResult("Player 1");
   }
 
   return <div></div>;

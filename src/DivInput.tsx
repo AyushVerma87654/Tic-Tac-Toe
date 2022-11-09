@@ -5,7 +5,7 @@ type DivInputProps = { children: string; value?: number; onClick: () => void };
 const DivInput: FC<DivInputProps> = ({ children, value, onClick }) => {
   let theme;
   if (value == 1) {
-    theme = "border-4 border-white border-x-red-500";
+    theme = "border-4 border-blue-500 border-x-red-500";
   }
   return (
     <div
